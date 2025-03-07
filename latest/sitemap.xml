@@ -396,6 +396,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/features/manual-control/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/features/motion/</loc>
          <lastmod>2025-03-07</lastmod>
          <changefreq>daily</changefreq>
@@ -442,6 +447,61 @@
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/interface/version/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/local/command/acceleration/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/local/command/gear/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/local/command/hazard_lights/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/local/command/pedals/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/local/command/steering/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/local/command/turn_indicators/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/local/command/velocity/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/local/control_mode/list/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/local/control_mode/select/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/local/control_mode/status/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/local/operator/status/</loc>
          <lastmod>2025-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -527,6 +587,61 @@
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/planning/cooperation/set_policies/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/remote/command/acceleration/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/remote/command/gear/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/remote/command/hazard_lights/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/remote/command/pedals/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/remote/command/steering/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/remote/command/turn_indicators/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/remote/command/velocity/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/remote/control_mode/list/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/remote/control_mode/select/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/remote/control_mode/status/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/remote/operator/status/</loc>
          <lastmod>2025-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -626,6 +741,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/AccelerationCommand/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/CooperationCommand/</loc>
          <lastmod>2025-03-07</lastmod>
          <changefreq>daily</changefreq>
@@ -716,7 +836,17 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/GearCommand/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/HazardLights/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/HazardLightsCommand/</loc>
          <lastmod>2025-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -727,6 +857,21 @@
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/LocalizationInitializationState/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/ManualControlMode/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/ManualControlModeStatus/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/ManualOperatorStatus/</loc>
          <lastmod>2025-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -747,6 +892,11 @@
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/OperationModeState/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/PedalsCommand/</loc>
          <lastmod>2025-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -786,6 +936,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/SteeringCommand/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/SteeringFactor/</loc>
          <lastmod>2025-03-07</lastmod>
          <changefreq>daily</changefreq>
@@ -801,6 +956,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/TurnIndicatorsCommand/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/VehicleDimensions/</loc>
          <lastmod>2025-03-07</lastmod>
          <changefreq>daily</changefreq>
@@ -812,6 +972,11 @@
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/VehicleStatus/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/VelocityCommand/</loc>
          <lastmod>2025-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -857,6 +1022,16 @@
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/srv/InitializeLocalization/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/srv/ListManualControlMode/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/srv/SelectManualControlMode/</loc>
          <lastmod>2025-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -927,6 +1102,11 @@
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/use-cases/vehicle-operation/</loc>
+         <lastmod>2025-03-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/use-cases/manual-control/</loc>
          <lastmod>2025-03-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
