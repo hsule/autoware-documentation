@@ -7734,30 +7734,7 @@ This is service dependent. Autoware supports the following transitions by defaul
 </tbody>
 </table>
 <h2 id="rti-state">RTI state<a class="headerlink" href="#rti-state" title="Permanent link">#</a></h2>
-<p>The RTI state indicates whether RTI is requested. If for some reason autonomous driving cannot continue, Autoware will request a change to manual driving.
-The following states are provided to properly handle RTI from multiple vehicles.</p>
-<table>
-<thead>
-<tr>
-<th>State</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>NONE</td>
-<td>RTI is not requested.</td>
-</tr>
-<tr>
-<td>MRM_OPERATING</td>
-<td>MRM is operating. Since MRC has not been achieved, immediate intervention is recommended.</td>
-</tr>
-<tr>
-<td>MRM_COMPLETED</td>
-<td>MRM is completed. Since MRC has been achieved, give priority to vehicles with urgency.</td>
-</tr>
-</tbody>
-</table>
+<p>The RTI state indicates whether RTI is requested. If for some reason autonomous driving cannot continue, Autoware will request a change to manual driving.</p>
 <!-- prettier-ignore --></div>
 
 
