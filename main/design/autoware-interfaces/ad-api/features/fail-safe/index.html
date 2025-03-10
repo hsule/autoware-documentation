@@ -5655,15 +5655,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#states" class="md-nav__link">
-    States
+  <a href="#rti-state" class="md-nav__link">
+    RTI state
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#behavior" class="md-nav__link">
-    Behavior
+  <a href="#mrm-state" class="md-nav__link">
+    MRM state
   </a>
   
 </li>
@@ -7645,15 +7645,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#states" class="md-nav__link">
-    States
+  <a href="#rti-state" class="md-nav__link">
+    RTI state
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#behavior" class="md-nav__link">
-    Behavior
+  <a href="#mrm-state" class="md-nav__link">
+    MRM state
   </a>
   
 </li>
@@ -7679,6 +7679,7 @@
 <div><h1 id="fail-safe">Fail-safe<a class="headerlink" href="#fail-safe" title="Permanent link">#</a></h1>
 <h2 id="related-api">Related API<a class="headerlink" href="#related-api" title="Permanent link">#</a></h2>
 <ul>
+<li><a href="../../list/api/fail_safe/rti_state/">/api/fail_safe/rti_state</a></li>
 <li><a href="../../list/api/fail_safe/mrm_state/">/api/fail_safe/mrm_state</a></li>
 </ul>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">#</a></h2>
@@ -7689,9 +7690,11 @@ For safety, Autoware switches the operation to MRM when an abnormality is detect
 Since the required behavior differs depending on the situation, MRM is implemented in various places as a specific mode in a normal module or as an independent module.
 The fail-safe module selects the behavior of MRM according to the abnormality and switches the gate output to that command.</p>
 <p><img alt="fail-safe-architecture" src="architecture.drawio.svg"></p>
-<h2 id="states">States<a class="headerlink" href="#states" title="Permanent link">#</a></h2>
-<p>The MRM state indicates whether MRM is operating. This state also provides success or failure.
-Generally, MRM will switch to another behavior if it fails.</p>
+<h2 id="rti-state">RTI state<a class="headerlink" href="#rti-state" title="Permanent link">#</a></h2>
+<p>The RTI state indicates whether RTI is requested. If for some reason autonomous driving cannot continue, Autoware will request a change to manual driving. As a side note, RTI is sometimes called Take Over Request (TOR).</p>
+<h2 id="mrm-state">MRM state<a class="headerlink" href="#mrm-state" title="Permanent link">#</a></h2>
+<p>The MRM state indicates whether MRM is operating and its current behavior.
+This state also provides success or failure of the operation. Generally, MRM will switch to another behavior if it fails.</p>
 <p><img alt="mrm-state" src="mrm-state.drawio.svg"></p>
 <table>
 <thead>
@@ -7719,7 +7722,6 @@ Generally, MRM will switch to another behavior if it fails.</p>
 </tr>
 </tbody>
 </table>
-<h2 id="behavior">Behavior<a class="headerlink" href="#behavior" title="Permanent link">#</a></h2>
 <p>There is a dependency between MRM behaviors. For example, it switches from a comfortable stop to a emergency stop, but not the other way around.
 This is service dependent. Autoware supports the following transitions by default.</p>
 <p><img alt="mrm-behavior" src="mrm-behavior.drawio.svg"></p>
