@@ -7856,7 +7856,7 @@ This tool can measure the turnaround time of any section in the source code, as 
 <p>In this section, we will present several case studies that demonstrate the performance improvements. These examples not only showcase our commitment to enhancing the system's efficiency but also serve as a valuable resource for developers who may face similar challenges in their own projects. The performance improvements discussed here span various components of the Autoware system, including sensing modules and planning modules. There are tendencies for each component regarding which points are becoming bottlenecks. By examining the methods, techniques, and tools employed in these case studies, readers can gain a better understanding of the practical aspects of optimizing complex software systems like Autoware.</p>
 <h3 id="sensing-component">Sensing component<a class="headerlink" href="#sensing-component" title="Permanent link">#</a></h3>
 <p>First, we will explain the procedure for performance improvement, taking the node <code>ring_outlier_filter</code> as an example.
-Refer to the <a href="https://github.com/autowarefoundation/autoware.universe/pull/3014">Pull Request</a> for details.</p>
+Refer to the <a href="https://github.com/autowarefoundation/autoware_universe/pull/3014">Pull Request</a> for details.</p>
 <p>The following figure is a time-series plot of the turnaround time of the main processing part of <code>ring_outlier_filter</code>, analyzed as described in the "Performance Measurement" section above.</p>
 <p><img alt="ring outlier filter turnaround time" src="https://raw.githubusercontent.com/autowarefoundation/autoware-documentation/0ad57338ca24b35f0a271c6ae003aa303b3dd4ce/docs/assets/images/ring_outlier_filter_turnaround_time.png"></p>
 <p>The horizontal axis indicates the number of callbacks called (i.e., callback index), and the vertical axis indicates the turnaround time.</p>
@@ -7917,7 +7917,7 @@ Let <code>N</code> be the size of <code>point_clouds</code> and <code>M</code> b
 <span class="w">        </span><span class="c1">// do something with O(1)</span>
 </code></pre></div>
 <p>By using O(N) algorithm for minimum enclosing circle, the computational complexity of this program is reduced to almost O(N * (N + M)) (note that the exact computational complexity does not really change).
-If you are interested, refer to the <a href="https://github.com/autowarefoundation/autoware.universe/pull/2846">Pull Request</a>.</p>
+If you are interested, refer to the <a href="https://github.com/autowarefoundation/autoware_universe/pull/2846">Pull Request</a>.</p>
 <p>Similar to this example, in the planning component, we take into consideration thousands to tens of thousands of point clouds, thousands of points in a path representing our own route, and polygons representing obstacles and detection areas in the surroundings, and we repeatedly create paths based on them. Therefore, we access the contents of the point clouds and paths multiple times using for-loops. In most cases, the bottleneck lies in these naive for-loops. Here, understanding Big O notation and reducing the order of computational complexity directly leads to performance improvements.</p>
 <!-- prettier-ignore --></div>
 

@@ -8124,7 +8124,7 @@ you can add the group like this structure at <code>lidar.launch.xml</code>:</p>
 <p>You can create <your-lidar-model>.launch.xml for common sensor launch,
 please check <a href="https://github.com/leo-drive/tutorial_vehicle_sensor_kit_launch/blob/main/common_sensor_launch/launch/hesai_PandarQT64.launch.xml"><code>hesai_PandarQT64.launch.xml</code></a> as an example.</your-lidar-model></p>
 <p>The <a href="https://github.com/autowarefoundation/sample_sensor_kit_launch/blob/main/common_sensor_launch/launch/nebula_node_container.launch.py">nebula_node_container.py</a> creates the Lidar pipeline for autoware,
-the pointcloud preprocessing pipeline is constructed for each lidar please check <a href="https://github.com/autowarefoundation/autoware.universe/tree/main/sensing/autoware_pointcloud_preprocessor">autoware_pointcloud_preprocessor</a> package for filters information as well.</p>
+the pointcloud preprocessing pipeline is constructed for each lidar please check <a href="https://github.com/autowarefoundation/autoware_universe/tree/main/sensing/autoware_pointcloud_preprocessor">autoware_pointcloud_preprocessor</a> package for filters information as well.</p>
 <p>For example, If you want to change your <code>outlier_filter</code> method,
 you can modify the pipeline components like this way:</p>
 <div class="highlight"><pre><span></span><code><span class="w"> </span>   nodes.append(
@@ -8167,7 +8167,7 @@ at <code>src/sensor_component/external</code> folder
 </code></pre></div>
 <p>Then, you can launch tensorrt_yolo node via adding yolo.launch.xml on your design like that:
 (i.e.,
-it is included in <a href="https://github.com/autowarefoundation/autoware.universe/blob/ad69c2851b7b84e12c9f0c3b177fb6a9032bf284/launch/tier4_perception_launch/launch/object_recognition/detection/camera_lidar_fusion_based_detection.launch.xml#L49-L59">tier4_perception_launch</a> package in autwoare.universe)
+it is included in <a href="https://github.com/autowarefoundation/autoware_universe/blob/ad69c2851b7b84e12c9f0c3b177fb6a9032bf284/launch/tier4_perception_launch/launch/object_recognition/detection/camera_lidar_fusion_based_detection.launch.xml#L49-L59">tier4_perception_launch</a> package in autwoare.universe)
 <code>image_number</code> argument defines your camera number</p>
 <div class="highlight"><pre><span></span><code><span class="w">  </span><span class="nt">&lt;include</span><span class="w"> </span><span class="na">file=</span><span class="s">"$(find-pkg-share tensorrt_yolo)/launch/yolo.launch.xml"</span><span class="nt">&gt;</span>
 <span class="w">    </span><span class="nt">&lt;arg</span><span class="w"> </span><span class="na">name=</span><span class="s">"image_raw0"</span><span class="w"> </span><span class="na">value=</span><span class="s">"$(var image_raw0)"</span><span class="nt">/&gt;</span>
@@ -8366,7 +8366,7 @@ if you decided to use container for 2D detection pipeline are:</p>
   for example, we will use <code>/perception/object_detection</code> as tensorrt_yolo node namespace,
   it will be explained in autoware usage section.
   For more information,
-  please check <a href="https://github.com/autowarefoundation/autoware.universe/tree/main/perception/autoware_image_projection_based_fusion">image_projection_based_fusion</a> package.</li>
+  please check <a href="https://github.com/autowarefoundation/autoware_universe/tree/main/perception/autoware_image_projection_based_fusion">image_projection_based_fusion</a> package.</li>
 </ul>
 <p>After the preparing <code>camera_node_container.launch.py</code> to our forked <code>common_sensor_launch</code> package,
 we need to build the package:</p>
@@ -8471,11 +8471,11 @@ you can check debug image with rviz2 or <a href="http://wiki.ros.org/rqt">rqt</a
 The default <abbr title="Global Navigation Satellite System">GNSS</abbr> sensor options at <a href="https://github.com/autowarefoundation/sample_sensor_kit_launch/blob/main/sample_sensor_kit_launch/launch/gnss.launch.xml"><code>sample_sensor_kit_launch</code></a> for <a href="https://www.u-blox.com/en/">u-blox</a>
 and <a href="https://www.septentrio.com/en">septentrio</a> is included in <code>gnss.launch.xml</code>,
 so If we use other sensors as <abbr title="Global Navigation Satellite System">GNSS</abbr>/INS receiver, we need to add it here.
-Moreover, <a href="https://github.com/autowarefoundation/autoware.universe/tree/main/sensing/autoware_gnss_poser">gnss_poser</a> package launches here,
+Moreover, <a href="https://github.com/autowarefoundation/autoware_universe/tree/main/sensing/autoware_gnss_poser">gnss_poser</a> package launches here,
 we will use this package for the pose source of our vehicle at localization initialization but remember,
 your sensor_driver must provide <a href="https://github.com/autowarefoundation/autoware_msgs/blob/main/autoware_sensing_msgs/msg/GnssInsOrientationStamped.msg">autoware gnss orientation message</a> for this node.
 If you are ready with your <abbr title="Global Navigation Satellite System">GNSS</abbr>/INS driver,
-you must set <code>navsatfix_topic_name</code> and <code>orientation_topic_name</code> variables at this launch file for <a href="https://github.com/autowarefoundation/autoware.universe/tree/main/sensing/autoware_gnss_poser">gnss_poser</a> arguments.
+you must set <code>navsatfix_topic_name</code> and <code>orientation_topic_name</code> variables at this launch file for <a href="https://github.com/autowarefoundation/autoware_universe/tree/main/sensing/autoware_gnss_poser">gnss_poser</a> arguments.
 For Example, necessary modifications for <your-gnss-sensor> should be like this:</your-gnss-sensor></p>
 <div class="highlight"><pre><span></span><code><span class="w"> </span> ...
 <span class="gd">- &lt;arg name="gnss_receiver" default="ublox" description="ublox(default) or septentrio"/&gt;</span>
@@ -8577,8 +8577,8 @@ At the <a href="https://github.com/autowarefoundation/sample_sensor_kit_launch/b
 there is <a href="https://mems.tamagawa-seiki.com/en/">Tamagawa <abbr title="Inertial Measurement Unit">IMU</abbr> sensor</a> used as a <abbr title="Inertial Measurement Unit">IMU</abbr> sensor.
 You can add your <abbr title="Inertial Measurement Unit">IMU</abbr> driver instead of the Tamagawa <abbr title="Inertial Measurement Unit">IMU</abbr> driver.
 Also,
-we will launch <a href="https://github.com/autowarefoundation/autoware.universe/tree/main/sensing/autoware_imu_corrector#gyro_bias_estimator">gyro_bias_estimator</a> and
-<a href="https://github.com/autowarefoundation/autoware.universe/tree/main/sensing/autoware_imu_corrector#imu_corrector">imu_corrector</a> at <code>imu.launch.xml</code> file.
+we will launch <a href="https://github.com/autowarefoundation/autoware_universe/tree/main/sensing/autoware_imu_corrector#gyro_bias_estimator">gyro_bias_estimator</a> and
+<a href="https://github.com/autowarefoundation/autoware_universe/tree/main/sensing/autoware_imu_corrector#imu_corrector">imu_corrector</a> at <code>imu.launch.xml</code> file.
 Please refer these documentations for more information
 (We added imu_corrector and gyro_bias_estimator at gnss.launch.xml at tutorial_vehicle,
 so we will not create and use <code>imu.launch.xml</code> for tutorial_vehicle).
