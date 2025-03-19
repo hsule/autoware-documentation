@@ -7798,7 +7798,7 @@
 </tbody>
 </table>
 <p>The table has been derived from <a href="https://github.com/ros2/rcl_interfaces/blob/humble/rcl_interfaces/msg/ParameterType.msg">Parameter Type</a> and <a href="https://github.com/ros2/rcl_interfaces/blob/humble/rcl_interfaces/msg/ParameterValue.msg">Parameter Value</a>.</p>
-<p>See example: <em>Lidar Apollo Segmentation TVM Nodes</em> <a href="https://github.com/autowarefoundation/autoware.universe/blob/f85c90b56ed4c7d6b52e787570e590cff786b28b/perception/lidar_apollo_segmentation_tvm_nodes/src/lidar_apollo_segmentation_tvm_node.cpp#L38">declare function</a></p>
+<p>See example: <em>Lidar Apollo Segmentation TVM Nodes</em> <a href="https://github.com/autowarefoundation/autoware_universe/blob/f85c90b56ed4c7d6b52e787570e590cff786b28b/perception/lidar_apollo_segmentation_tvm_nodes/src/lidar_apollo_segmentation_tvm_node.cpp#L38">declare function</a></p>
 <h2 id="parameter-file">Parameter File<a class="headerlink" href="#parameter-file" title="Permanent link">#</a></h2>
 <p>The parameter file is minimal as there is no need to provide the user with additional information, e.g., description or type. This is because the associated schema file provides the additional information. Use the template below as a starting point for a <abbr title="Robot Operating System">ROS</abbr> node.</p>
 <div class="highlight"><pre><span></span><code><span class="nt">/**</span><span class="p">:</span>
@@ -7812,7 +7812,7 @@
 <ul>
 <li><strong>Node parameter file</strong><ul>
 <li>Node parameter files store the default parameters provided for each package in Autoware.<ul>
-<li>For example, <a href="https://github.com/autowarefoundation/autoware.universe/tree/245242cee866de2d113e89c562353c5fc17f1f98/planning/behavior_path_planner/config">the parameter of <code>behavior_path_planner</code></a></li>
+<li>For example, <a href="https://github.com/autowarefoundation/autoware_universe/tree/245242cee866de2d113e89c562353c5fc17f1f98/planning/behavior_path_planner/config">the parameter of <code>behavior_path_planner</code></a></li>
 </ul>
 </li>
 <li>All nodes in Autoware must have a parameter file if <abbr title="Robot Operating System">ROS</abbr> parameters are declared in the node.</li>
@@ -7885,7 +7885,7 @@
 <span class="p">}</span>
 </code></pre></div>
 <p>The schema file path is <code>INSERT_PATH_TO_PACKAGE/schema/</code> and the schema file name is <code>INSERT_NODE_NAME.schema.json</code>. To adapt the template to the <abbr title="Robot Operating System">ROS</abbr> node, replace each <code>INSERT_...</code> and add all parameters <code>1..N</code>.</p>
-<p>See example: <em>Image Projection Based Fusion - Pointpainting</em> <a href="https://github.com/autowarefoundation/autoware.universe/blob/main/universe/perception/autoware_image_projection_based_fusion/schema/pointpainting.schema.json">schema</a></p>
+<p>See example: <em>Image Projection Based Fusion - Pointpainting</em> <a href="https://github.com/autowarefoundation/autoware_universe/blob/main/universe/perception/autoware_image_projection_based_fusion/schema/pointpainting.schema.json">schema</a></p>
 <h3 id="attributes">Attributes<a class="headerlink" href="#attributes" title="Permanent link">#</a></h3>
 <p>Parameters have several attributes, some are required and some optional. The optional attributes are highly encouraged when applicable, as they provide useful information about a parameter and can ensure the value of the parameter is within its bounds.</p>
 <h4 id="required">Required<a class="headerlink" href="#required" title="Permanent link">#</a></h4>

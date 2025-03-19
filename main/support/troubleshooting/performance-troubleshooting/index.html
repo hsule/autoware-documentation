@@ -7739,7 +7739,7 @@ ros2<span class="w"> </span>run<span class="w"> </span>demo_nodes_cpp<span class
 <p>Check the <code>~/.bash_history</code> file to see if there are any <code>colcon build</code> directives without <code>-DCMAKE_BUILD_TYPE=Release</code> or <code>-DCMAKE_BUILD_TYPE=RelWithDebInfo</code> flags at all.</p>
 <p>Even if a build starts with these flags but same workspace gets compiled without these flags, it will still be a slow build in the end.</p>
 <p>In addition, the nodes will run slow in general, especially the <code>pointcloud_preprocessor</code> nodes.</p>
-<p>Example issue: <a href="https://github.com/autowarefoundation/autoware.universe/issues/2597#issuecomment-1491789081">issue2597</a></p>
+<p>Example issue: <a href="https://github.com/autowarefoundation/autoware_universe/issues/2597#issuecomment-1491789081">issue2597</a></p>
 <h4 id="solution_1">Solution<a class="headerlink" href="#solution_1" title="Permanent link">#</a></h4>
 <ul>
 <li>Remove the <code>build</code>, <code>install</code> and optionally <code>log</code> folders in the main <code>autoware</code> folder.</li>

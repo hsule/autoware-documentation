@@ -7784,14 +7784,14 @@
 <h2 id="maintenance-of-codeowners">Maintenance of <code>CODEOWNERS</code><a class="headerlink" href="#maintenance-of-codeowners" title="Permanent link">#</a></h2>
 <p>Generally, repository maintainers handle the updates to <code>CODEOWNERS</code> files. To propose changes, submit a PR to modify the file.</p>
 <h3 id="special-case-for-the-autoware-universe-repository">Special case for the Autoware Universe repository<a class="headerlink" href="#special-case-for-the-autoware-universe-repository" title="Permanent link">#</a></h3>
-<p>In the <a href="https://github.com/autowarefoundation/autoware.universe">autoware.universe</a> repository, maintenance of the <code>CODEOWNERS</code> file is automated by the CI.</p>
-<p><a href="https://github.com/autowarefoundation/autoware.universe/actions/workflows/update-codeowners-from-packages.yaml">This workflow</a> updates the <code>CODEOWNERS</code> file based on the <code>maintainer</code> information in the <code>package.xml</code> files of the packages in the repository.</p>
-<p>In order to change the code owners for a package in the <code>autoware.universe</code> repository:</p>
+<p>In the <a href="https://github.com/autowarefoundation/autoware_universe">autoware_universe</a> repository, maintenance of the <code>CODEOWNERS</code> file is automated by the CI.</p>
+<p><a href="https://github.com/autowarefoundation/autoware_universe/actions/workflows/update-codeowners-from-packages.yaml">This workflow</a> updates the <code>CODEOWNERS</code> file based on the <code>maintainer</code> information in the <code>package.xml</code> files of the packages in the repository.</p>
+<p>In order to change the code owners for a package in the <code>autoware_universe</code> repository:</p>
 <ol>
 <li>Modify the <code>maintainer</code> information in the <code>package.xml</code> file via a PR.</li>
 <li>Once merged, the CI workflow runs at midnight UTC (or can be triggered manually by a maintainer) to update the <code>CODEOWNERS</code> file and create a PR.</li>
 <li>A maintainer then needs to merge the CI-generated PR to finalize the update.<ul>
-<li><strong>Example Automated PR:</strong> <a href="https://github.com/autowarefoundation/autoware.universe/pull/6866">chore: update CODEOWNERS #6866</a></li>
+<li><strong>Example Automated PR:</strong> <a href="https://github.com/autowarefoundation/autoware_universe/pull/6866">chore: update CODEOWNERS #6866</a></li>
 </ul>
 </li>
 </ol>
