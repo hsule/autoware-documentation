@@ -7613,7 +7613,7 @@
 launching at <code>autoware_launch.xml</code> as we mentioned at <a href="../">Launch Autoware</a> page.
 The <code>autoware_launch</code> package includes <code>tier4_perception_component.launch.xml</code>
 for starting perception launch files invocation from <code>autoware_launch.xml</code>.
-This diagram describes some of the Autoware perception launch files flow at <code>autoware_launch</code> and <code>autoware.universe</code> packages.</p>
+This diagram describes some of the Autoware perception launch files flow at <code>autoware_launch</code> and <code>autoware_universe</code> packages.</p>
 <figure>
 <p><img align="center" alt="perception-launch-flow" src="images/perception_launch_flow.svg">
   </p>
@@ -7634,7 +7634,7 @@ it will override the value on lower-level launches.</p>
 </div>
 <h2 id="tier4_perception_componentlaunchxml">tier4_perception_component.launch.xml<a class="headerlink" href="#tier4_perception_componentlaunchxml" title="Permanent link">#</a></h2>
 <p>The <code>tier4_perception_component.launch.xml</code> launch file is the main perception component launch at the <code>autoware_launch</code> package.
-This launch file calls <code>perception.launch.xml</code> at <a href="https://github.com/autowarefoundation/autoware.universe/tree/main/launch/tier4_perception_launch">tier4_perception_launch</a> package from <code>autoware.universe</code> repository.
+This launch file calls <code>perception.launch.xml</code> at <a href="https://github.com/autowarefoundation/autoware_universe/tree/main/launch/tier4_perception_launch">tier4_perception_launch</a> package from <code>autoware_universe</code> repository.
 We can modify perception launch arguments at tier4_perception_component.launch.xml.
 Also,
 we can add any other necessary arguments
@@ -7643,7 +7643,7 @@ to change it since <code>tier4_perception_component.launch.xml</code> is the top
 Here are some predefined perception launch arguments:</p>
 <ul>
 <li>
-<p><strong><code>occupancy_grid_map_method:</code></strong> This argument determines the occupancy grid map method for perception stack. Please check <a href="https://autowarefoundation.github.io/autoware.universe/main/perception/autoware_probabilistic_occupancy_grid_map/">probabilistic_occupancy_grid_map</a> package for detailed information.
+<p><strong><code>occupancy_grid_map_method:</code></strong> This argument determines the occupancy grid map method for perception stack. Please check <a href="https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_probabilistic_occupancy_grid_map/">probabilistic_occupancy_grid_map</a> package for detailed information.
   The default probabilistic occupancy grid map method is <code>pointcloud_based_occupancy_grid_map</code>.
   If you want to change it to the <code>laserscan_based_occupancy_grid_map</code>, you can change it here:</p>
 <div class="highlight"><pre><span></span><code><span class="gd">- &lt;arg name="occupancy_grid_map_method" default="pointcloud_based_occupancy_grid_map" description="options: pointcloud_based_occupancy_grid_map, laserscan_based_occupancy_grid_map"/&gt;</span>
@@ -7654,7 +7654,7 @@ Here are some predefined perception launch arguments:</p>
 <ul>
 <li>
 <p><strong><code>detected_objects_filter_method:</code></strong> This argument determines the filter method for detected objects.
-  Please check <a href="https://autowarefoundation.github.io/autoware.universe/main/perception/autoware_detected_object_validation/">detected_object_validation</a> package for detailed information about lanelet and position filter.
+  Please check <a href="https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_detected_object_validation/">detected_object_validation</a> package for detailed information about lanelet and position filter.
   The default detected object filter method is <code>lanelet_filter</code>.
   If you want to change it to the <code>position_filter</code>, you can change it here:</p>
 <div class="highlight"><pre><span></span><code><span class="gd">- &lt;arg name="detected_objects_filter_method" default="lanelet_filter" description="options: lanelet_filter, position_filter"/&gt;</span>
@@ -7665,7 +7665,7 @@ Here are some predefined perception launch arguments:</p>
 <ul>
 <li>
 <p><strong><code>detected_objects_validation_method:</code></strong> This argument determines the validation method for detected objects.
-  Please check <a href="https://autowarefoundation.github.io/autoware.universe/main/perception/autoware_detected_object_validation/">detected_object_validation</a> package for detailed information about validation methods.
+  Please check <a href="https://autowarefoundation.github.io/autoware_universe/main/perception/autoware_detected_object_validation/">detected_object_validation</a> package for detailed information about validation methods.
   The default detected object filter method is <code>obstacle_pointcloud</code>.
   If you want to change it to the <code>occupancy_grid</code>, you can change it here,
   but remember it requires <code>laserscan_based_occupancy_grid_map</code> method as <code>occupancy_grid_map_method</code>:</p>
@@ -7688,12 +7688,12 @@ Here are some predefined perception launch arguments:</p>
 </div>
 <p>The predefined <code>tier4_perception_component.launch.xml</code> arguments explained above,
 but there is the lot of perception arguments
-included in <code>perception.launch.xml</code> launch file at <a href="https://github.com/autowarefoundation/autoware.universe/tree/main/launch/tier4_perception_launch">tier4_perception_launch</a>.
-Since we didn't fork <code>autoware.universe</code> repository,
+included in <code>perception.launch.xml</code> launch file at <a href="https://github.com/autowarefoundation/autoware_universe/tree/main/launch/tier4_perception_launch">tier4_perception_launch</a>.
+Since we didn't fork <code>autoware_universe</code> repository,
 we can add the necessary launch argument to tier4_perception_component.launch.xml file.
 Please follow the guidelines for some examples.</p>
 <h2 id="perceptionlaunchxml">perception.launch.xml<a class="headerlink" href="#perceptionlaunchxml" title="Permanent link">#</a></h2>
-<p>The <code>perception.launch.xml</code> launch file is the main perception launch at the <code>autoware.universe</code>.
+<p>The <code>perception.launch.xml</code> launch file is the main perception launch at the <code>autoware_universe</code>.
 This launch file calls necessary perception launch files
 as we mentioned <a href="#overview"><code>Autoware perception launch flow diagram</code></a> above.
 The top-level launch file of <code>perception.launch.xml</code> is <code>tier4_perception_component.launch.xml</code>,
@@ -7703,7 +7703,7 @@ we will apply these changes <code>tier4_perception_component.launch.xml</code> i
 <ul>
 <li>
 <p><strong><code>remove_unknown:</code></strong> This parameter determines the remove unknown objects at camera-lidar fusion.
-  Please check <a href="https://github.com/autowarefoundation/autoware.universe/blob/main/perception/autoware_image_projection_based_fusion/docs/roi-cluster-fusion.md">roi_cluster_fusion</a> node for detailed information.
+  Please check <a href="https://github.com/autowarefoundation/autoware_universe/blob/main/perception/autoware_image_projection_based_fusion/docs/roi-cluster-fusion.md">roi_cluster_fusion</a> node for detailed information.
   The default value is <code>true</code>.
   If you want to change it to the <code>false</code>,
   you can add this argument to <code>tier4_perception_component.launch.xml</code>,
