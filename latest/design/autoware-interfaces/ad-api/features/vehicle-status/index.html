@@ -5816,6 +5816,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#metrics" class="md-nav__link">
+    Metrics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#dimensions" class="md-nav__link">
     Dimensions
   </a>
@@ -7652,6 +7659,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#metrics" class="md-nav__link">
+    Metrics
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#dimensions" class="md-nav__link">
     Dimensions
   </a>
@@ -7681,14 +7695,18 @@
 <ul>
 <li><a href="../../list/api/vehicle/kinematics/">/api/vehicle/kinematics</a></li>
 <li><a href="../../list/api/vehicle/status/">/api/vehicle/status</a></li>
+<li><a href="../../list/api/vehicle/metrics/">/api/vehicle/metrics</a></li>
 <li><a href="../../list/api/vehicle/dimensions/">/api/vehicle/dimensions</a></li>
 </ul>
 <h2 id="kinematics">Kinematics<a class="headerlink" href="#kinematics" title="Permanent link">#</a></h2>
 <p>This is an estimate of the vehicle kinematics. The vehicle position is necessary for applications to schedule dispatches.
 Also, using velocity and acceleration, applications can find vehicles that need operator assistance, such as stuck or brake suddenly.</p>
 <h2 id="status">Status<a class="headerlink" href="#status" title="Permanent link">#</a></h2>
-<p>This is the status provided by the vehicle. The indicators and steering are mainly used for visualization and remote control.
-The remaining energy can be also used for vehicle scheduling.</p>
+<p>This is the status provided by the vehicle, such as indicators and steering.
+These are mainly used for visualization and remote control.</p>
+<h2 id="metrics">Metrics<a class="headerlink" href="#metrics" title="Permanent link">#</a></h2>
+<p>This is metrics data provided by the vehicle, such as remaining energy
+The remaining energy can be used for vehicle dispatch scheduling.</p>
 <h2 id="dimensions">Dimensions<a class="headerlink" href="#dimensions" title="Permanent link">#</a></h2>
 <p>The vehicle dimensions are used to know the actual distance between the vehicle and objects because the vehicle position in kinematics is the coordinates of the base link. This is necessary for visualization when supporting vehicles remotely.</p>
 <!-- prettier-ignore --></div>
