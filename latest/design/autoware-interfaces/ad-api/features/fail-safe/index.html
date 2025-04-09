@@ -5668,6 +5668,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mrm-request" class="md-nav__link">
+    MRM request
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -7658,6 +7665,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#mrm-request" class="md-nav__link">
+    MRM request
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -7681,6 +7695,8 @@
 <ul>
 <li><a href="../../list/api/fail_safe/rti_state/">/api/fail_safe/rti_state</a></li>
 <li><a href="../../list/api/fail_safe/mrm_state/">/api/fail_safe/mrm_state</a></li>
+<li><a href="../../list/api/fail_safe/mrm_request/send/">/api/fail_safe/mrm_request/send</a></li>
+<li><a href="../../list/api/fail_safe/mrm_request/list/">/api/fail_safe/mrm_request/list</a></li>
 </ul>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">#</a></h2>
 <p>This API manages the behavior related to the abnormality of the vehicle.
@@ -7748,6 +7764,29 @@ This is service dependent. Autoware supports the following transitions by defaul
 <tr>
 <td>PULL_OVER</td>
 <td>The vehicle will stop after moving to the side of the road.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mrm-request">MRM request<a class="headerlink" href="#mrm-request" title="Permanent link">#</a></h2>
+<p>MRM request is a feature that triggers MRM from an application, and is mainly used when the application wants to transition the vehicle to a safe state by detecting an abnormality. When an MRM request is sent, Autoware attempts to operate the MRM. To distinguish requests from multiple applications, an MRM request must include a user name as an identifier.</p>
+<p>Since MRM has multiple behaviors, this feature provides a selection strategy. Please refer to the table below for supported strategies.
+If there are multiple requests, the strategy with the highest priority will be used.
+Note that when Autoware detects an abnormality, it may not be able to operate according to the MRM request strategy.</p>
+<table>
+<thead>
+<tr>
+<th>Strategy</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CANCEL</td>
+<td>Cancel the MRM request associated with the specified user.</td>
+</tr>
+<tr>
+<td>DELEGATE</td>
+<td>Delegate the selection of MRM behavior to Autoware.</td>
 </tr>
 </tbody>
 </table>

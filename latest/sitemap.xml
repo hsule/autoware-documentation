@@ -451,6 +451,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/fail_safe/mrm_request/list/</loc>
+         <lastmod>2025-04-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/fail_safe/mrm_request/send/</loc>
+         <lastmod>2025-04-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/interface/version/</loc>
          <lastmod>2025-04-09</lastmod>
          <changefreq>daily</changefreq>
@@ -916,6 +926,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/MrmRequest/</loc>
+         <lastmod>2025-04-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/MrmRequestList/</loc>
+         <lastmod>2025-04-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/MrmState/</loc>
          <lastmod>2025-04-09</lastmod>
          <changefreq>daily</changefreq>
@@ -1087,6 +1107,11 @@
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/srv/SelectManualControlMode/</loc>
+         <lastmod>2025-04-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/srv/SendMrmRequest/</loc>
          <lastmod>2025-04-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
