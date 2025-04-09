@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://autowarefoundation.github.io/autoware-documentation/main/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/ResponseStatus/">
+        <link rel="canonical" href="https://autowarefoundation.github.io/autoware-documentation/main/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/srv/GetVehicleSpecs/">
       
       
-        <link rel="prev" href="../PedalsCommand/">
+        <link rel="prev" href="../GetVehicleDimensions/">
       
       
-        <link rel="next" href="../Route/">
+        <link rel="next" href="../InitializeLocalization/">
       
       <link rel="icon" href="../../../../../../../assets/images/autoware-foundation.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.20">
     
     
       
-        <title>autoware_adapi_v1_msgs/msg/ResponseStatus - Autoware Documentation</title>
+        <title>autoware_adapi_v1_msgs/srv/GetVehicleSpecs - Autoware Documentation</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#autoware_adapi_v1_msgsmsgresponsestatus" class="md-skip">
+        <a href="#autoware_adapi_v1_msgssrvgetvehiclespecs" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              autoware_adapi_v1_msgs/msg/ResponseStatus
+              autoware_adapi_v1_msgs/srv/GetVehicleSpecs
             
           </span>
         </div>
@@ -7607,45 +7607,20 @@
   
 
 
-<div><h1 id="autoware_adapi_v1_msgsmsgresponsestatus">autoware_adapi_v1_msgs/msg/ResponseStatus<a class="headerlink" href="#autoware_adapi_v1_msgsmsgresponsestatus" title="Permanent link">#</a></h1>
+<div><h1 id="autoware_adapi_v1_msgssrvgetvehiclespecs">autoware_adapi_v1_msgs/srv/GetVehicleSpecs<a class="headerlink" href="#autoware_adapi_v1_msgssrvgetvehiclespecs" title="Permanent link">#</a></h1>
 <h2 id="definition">Definition<a class="headerlink" href="#definition" title="Permanent link">#</a></h2>
-<div class="highlight"><pre><span></span><code># error code
-uint16 UNKNOWN = 50000
-uint16 SERVICE_UNREADY = 50001
-uint16 SERVICE_TIMEOUT = 50002
-uint16 TRANSFORM_ERROR = 50003
-uint16 PARAMETER_ERROR = 50004
-
-# warning code
-uint16 DEPRECATED = 60000
-uint16 NO_EFFECT = 60001
-
-# variables
-bool   success
-uint16 code
-string message
+<div class="highlight"><pre><span></span><code>---
+autoware_adapi_v1_msgs/ResponseStatus status
+autoware_adapi_v1_msgs/VehicleSpecs specs
 </code></pre></div>
 <h2 id="this-type-uses">This type uses<a class="headerlink" href="#this-type-uses" title="Permanent link">#</a></h2>
 <ul>
-<li>None</li>
+<li><a href="../../msg/ResponseStatus/">autoware_adapi_v1_msgs/msg/ResponseStatus</a></li>
+<li><a href="../../msg/VehicleSpecs/">autoware_adapi_v1_msgs/msg/VehicleSpecs</a></li>
 </ul>
 <h2 id="this-type-is-used-by">This type is used by<a class="headerlink" href="#this-type-is-used-by" title="Permanent link">#</a></h2>
 <ul>
-<li><a href="../../srv/AcceptStart/">autoware_adapi_v1_msgs/srv/AcceptStart</a></li>
-<li><a href="../../srv/ChangeOperationMode/">autoware_adapi_v1_msgs/srv/ChangeOperationMode</a></li>
-<li><a href="../../srv/ClearRoute/">autoware_adapi_v1_msgs/srv/ClearRoute</a></li>
-<li><a href="../../srv/GetCooperationPolicies/">autoware_adapi_v1_msgs/srv/GetCooperationPolicies</a></li>
-<li><a href="../../srv/GetDoorLayout/">autoware_adapi_v1_msgs/srv/GetDoorLayout</a></li>
-<li><a href="../../srv/GetVehicleDimensions/">autoware_adapi_v1_msgs/srv/GetVehicleDimensions</a></li>
-<li><a href="../../srv/GetVehicleSpecs/">autoware_adapi_v1_msgs/srv/GetVehicleSpecs</a></li>
-<li><a href="../../srv/InitializeLocalization/">autoware_adapi_v1_msgs/srv/InitializeLocalization</a></li>
-<li><a href="../../srv/ListManualControlMode/">autoware_adapi_v1_msgs/srv/ListManualControlMode</a></li>
-<li><a href="../../srv/SelectManualControlMode/">autoware_adapi_v1_msgs/srv/SelectManualControlMode</a></li>
-<li><a href="../../srv/SetCooperationCommands/">autoware_adapi_v1_msgs/srv/SetCooperationCommands</a></li>
-<li><a href="../../srv/SetCooperationPolicies/">autoware_adapi_v1_msgs/srv/SetCooperationPolicies</a></li>
-<li><a href="../../srv/SetDoorCommand/">autoware_adapi_v1_msgs/srv/SetDoorCommand</a></li>
-<li><a href="../../srv/SetRoute/">autoware_adapi_v1_msgs/srv/SetRoute</a></li>
-<li><a href="../../srv/SetRoutePoints/">autoware_adapi_v1_msgs/srv/SetRoutePoints</a></li>
+<li>None</li>
 </ul>
 <!-- prettier-ignore --></div>
 
@@ -7674,7 +7649,7 @@ string message
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../PedalsCommand/" class="md-footer__link md-footer__link--prev" aria-label="Previous: autoware_adapi_v1_msgs/msg/PedalsCommand" rel="prev">
+          <a href="../GetVehicleDimensions/" class="md-footer__link md-footer__link--prev" aria-label="Previous: autoware_adapi_v1_msgs/srv/GetVehicleDimensions" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -7683,20 +7658,20 @@ string message
                 Previous
               </span>
               <div class="md-ellipsis">
-                autoware_adapi_v1_msgs/msg/PedalsCommand
+                autoware_adapi_v1_msgs/srv/GetVehicleDimensions
               </div>
             </div>
           </a>
         
         
           
-          <a href="../Route/" class="md-footer__link md-footer__link--next" aria-label="Next: autoware_adapi_v1_msgs/msg/Route" rel="next">
+          <a href="../InitializeLocalization/" class="md-footer__link md-footer__link--next" aria-label="Next: autoware_adapi_v1_msgs/srv/InitializeLocalization" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                autoware_adapi_v1_msgs/msg/Route
+                autoware_adapi_v1_msgs/srv/InitializeLocalization
               </div>
             </div>
             <div class="md-footer__button md-icon">
