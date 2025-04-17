@@ -1053,6 +1053,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#want-to-try-autoware-with-higher-speed" class="md-nav__link">
+    Want to Try Autoware with Higher Speed?
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -7848,6 +7855,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#want-to-try-autoware-with-higher-speed" class="md-nav__link">
+    Want to Try Autoware with Higher Speed?
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -8106,6 +8120,12 @@ ros2<span class="w"> </span>launch<span class="w"> </span>autoware_launch<span c
 <h2 id="want-to-try-autoware-with-your-custom-map">Want to Try Autoware with Your Custom Map?<a class="headerlink" href="#want-to-try-autoware-with-your-custom-map" title="Permanent link">#</a></h2>
 <p>The above content describes the process for conducting some operations in the planning simulator using a sample map. If you are interested in running Autoware with maps of your own environment, please visit the <a href="https://autowarefoundation.github.io/autoware-documentation/main/how-to-guides/integrating-autoware/creating-maps/#creating-maps">How to Create Vector Map</a> section for guidance.</p>
 <p><img alt="psim-custom-map" src="../images/planning/others/psim-custom-map.png"></p>
+<h2 id="want-to-try-autoware-with-higher-speed">Want to Try Autoware with Higher Speed?<a class="headerlink" href="#want-to-try-autoware-with-higher-speed" title="Permanent link">#</a></h2>
+<p>The original Autoware is designed to operate at a wide speed range. But for safety reasons, the default maximum velocity has been limited to 15 km/h. In that case, even you drag the slider to a higher speed in rviz panel, the system will not allow it.</p>
+<p>If you want to run Autoware at a higher speed, you can modify the <code>max_vel</code> parameter in the config file <a href="https://github.com/autowarefoundation/autoware_launch/blob/main/autoware_launch/config/planning/scenario_planning/common/common.param.yaml">common.param.yaml</a> located in the <code>config</code> directory of your autoware_launch.</p>
+<p><img alt="common.param.yaml" src="../images/planning/others/common.param.yaml.png"></p>
+<p>For example, to set the maximum velocity to 72 km/h, you would change the value to <code>20.0</code> (since 72 km/h is equivalent to 20 m/s).</p>
+<p><img alt="increase-max-velocity" src="../images/planning/others/increase-max-velocity.png"></p>
 <!-- prettier-ignore --></div>
 
 
