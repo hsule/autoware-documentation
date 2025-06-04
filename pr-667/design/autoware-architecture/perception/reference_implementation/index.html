@@ -7800,7 +7800,7 @@
 
 <div><h1 id="perception-component-reference-implementation-design">Perception Component Reference Implementation Design<a class="headerlink" href="#perception-component-reference-implementation-design" title="Permanent link">#</a></h1>
 <h2 id="purpose-of-this-document">Purpose of this document<a class="headerlink" href="#purpose-of-this-document" title="Permanent link">#</a></h2>
-<p>This document outlines detailed design of the reference imprementations. This allows developers and users to understand what is currently available with the Perception Component, how to utilize, expand, or add to its features.</p>
+<p>This document outlines detailed design of the reference implementations. This allows developers and users to understand what is currently available with the Perception Component, how to utilize, expand, or add to its features.</p>
 <h2 id="whole-architecture">Whole architecture<a class="headerlink" href="#whole-architecture" title="Permanent link">#</a></h2>
 <p>This diagram describes the architecture of the reference implementation.</p>
 <p><img alt="overall-perception-architecture" src="../image/reference-implementaion-perception-diagram.drawio.svg"></p>
@@ -7860,10 +7860,6 @@ The detection range typically falls between 30m and 50m.</p>
 <p>As optional method for detection to improve detection of objects that LiDAR-based methods struggle with, we have introduced <strong>Camera-Only 3D Detection</strong>.
 <code>Camera-Only 3D detection</code> aims to solve the cases that are difficult to detect with LiDAR-based methods.
 For example, <code>Camera-Only 3D detection</code> will deal with detection of objects with tree occlusion and long-distance recognition.</p>
-<p>Available methods include:</p>
-<ul>
-<li>StreamPETR (TBD)</li>
-</ul>
 <p>Note that we will apply a high-confidence threshold to suppress the impact of false positives in <code>Camera-Only 3D Detection</code>.</p>
 <h3 id="radar-only-faraway-object-3d-detection">Radar-Only Faraway Object 3D Detection<a class="headerlink" href="#radar-only-faraway-object-3d-detection" title="Permanent link">#</a></h3>
 <p>For enhanced detection of distant objects, we use <strong>Radar-Only 3D Detection</strong>.
