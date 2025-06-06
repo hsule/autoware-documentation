@@ -5033,16 +5033,78 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#architecture" class="md-nav__link">
-    Architecture
+  <a href="#whole-architecture" class="md-nav__link">
+    Whole architecture
   </a>
   
-    <nav class="md-nav" aria-label="Architecture">
+    <nav class="md-nav" aria-label="Whole architecture">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#internal-interface-in-the-perception-component" class="md-nav__link">
     Internal interface in the perception component
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-for-object-recognition" class="md-nav__link">
+    Architecture for object recognition
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture for object recognition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base-3d-detection" class="md-nav__link">
+    Base 3D Detection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#near-object-3d-detection" class="md-nav__link">
+    Near-Object 3D Detection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tbd-camera-only-3d-detection" class="md-nav__link">
+    (TBD) Camera-Only 3D Detection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radar-only-faraway-object-3d-detection" class="md-nav__link">
+    Radar-Only Faraway Object 3D Detection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tbd-3d-semantic-segmentation" class="md-nav__link">
+    (TBD) 3D Semantic Segmentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cluster-based-3d-detection" class="md-nav__link">
+    Cluster-Based 3D Detection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-object-tracking-v2" class="md-nav__link">
+    Multi-Object Tracking v2
   </a>
   
 </li>
@@ -7637,16 +7699,78 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#architecture" class="md-nav__link">
-    Architecture
+  <a href="#whole-architecture" class="md-nav__link">
+    Whole architecture
   </a>
   
-    <nav class="md-nav" aria-label="Architecture">
+    <nav class="md-nav" aria-label="Whole architecture">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#internal-interface-in-the-perception-component" class="md-nav__link">
     Internal interface in the perception component
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-for-object-recognition" class="md-nav__link">
+    Architecture for object recognition
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture for object recognition">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#base-3d-detection" class="md-nav__link">
+    Base 3D Detection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#near-object-3d-detection" class="md-nav__link">
+    Near-Object 3D Detection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tbd-camera-only-3d-detection" class="md-nav__link">
+    (TBD) Camera-Only 3D Detection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#radar-only-faraway-object-3d-detection" class="md-nav__link">
+    Radar-Only Faraway Object 3D Detection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tbd-3d-semantic-segmentation" class="md-nav__link">
+    (TBD) 3D Semantic Segmentation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cluster-based-3d-detection" class="md-nav__link">
+    Cluster-Based 3D Detection
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-object-tracking-v2" class="md-nav__link">
+    Multi-Object Tracking v2
   </a>
   
 </li>
@@ -7676,8 +7800,8 @@
 
 <div><h1 id="perception-component-reference-implementation-design">Perception Component Reference Implementation Design<a class="headerlink" href="#perception-component-reference-implementation-design" title="Permanent link">#</a></h1>
 <h2 id="purpose-of-this-document">Purpose of this document<a class="headerlink" href="#purpose-of-this-document" title="Permanent link">#</a></h2>
-<p>This document outlines detailed design of the reference imprementations. This allows developers and users to understand what is currently available with the Perception Component, how to utilize, expand, or add to its features.</p>
-<h2 id="architecture">Architecture<a class="headerlink" href="#architecture" title="Permanent link">#</a></h2>
+<p>This document outlines detailed design of the reference implementations. This allows developers and users to understand what is currently available with the Perception Component, how to utilize, expand, or add to its features.</p>
+<h2 id="whole-architecture">Whole architecture<a class="headerlink" href="#whole-architecture" title="Permanent link">#</a></h2>
 <p>This diagram describes the architecture of the reference implementation.</p>
 <p><img alt="overall-perception-architecture" src="../image/reference-implementaion-perception-diagram.drawio.svg"></p>
 <p>The Perception component consists of the following sub-components:</p>
@@ -7711,6 +7835,75 @@
 </ul>
 </li>
 </ul>
+<h2 id="architecture-for-object-recognition">Architecture for object recognition<a class="headerlink" href="#architecture-for-object-recognition" title="Permanent link">#</a></h2>
+<p><img alt="Overall Pipeline" src="../image/new_autoware_design.drawio.svg"></p>
+<h3 id="base-3d-detection">Base 3D Detection<a class="headerlink" href="#base-3d-detection" title="Permanent link">#</a></h3>
+<p>Autoware primarily uses ML-based methods for 3D detection, referred to as <strong>Base 3D Detection</strong>.
+Available methods include:</p>
+<ul>
+<li><a href="https://github.com/autowarefoundation/autoware.universe/tree/main/perception/autoware_lidar_centerpoint">CenterPoint</a></li>
+<li><a href="https://github.com/autowarefoundation/autoware.universe/tree/main/perception/autoware_lidar_transfusion">TransFusion-L</a></li>
+<li><a href="https://github.com/autowarefoundation/autoware_universe/tree/main/perception/autoware_bevfusion">BEVFusion-L</a></li>
+<li><a href="https://github.com/autowarefoundation/autoware.universe/tree/main/perception/autoware_lidar_apollo_instance_segmentation">Apollo instance segmentation</a> + <a href="https://github.com/autowarefoundation/autoware.universe/tree/main/perception/autoware_shape_estimation">shape estimation</a></li>
+</ul>
+<p>The detection range for <code>Base 3D Detection</code> typically falls between 90m and 120m, depending on the specific case.
+If you wish to use Camera-LiDAR fusion, models like BEVFusion-CL (the model of Camera-LiDAR fusion) can be integrated.
+However, since <code>Base 3D Detection</code> is a critical component of the new architecture, stable performance is essential.
+Therefore, we do not recommend using Camera-LiDAR fusion methods in environments where sensor data frequently drops.</p>
+<h3 id="near-object-3d-detection">Near-Object 3D Detection<a class="headerlink" href="#near-object-3d-detection" title="Permanent link">#</a></h3>
+<p>As optional method for detection to enhance detection of nearby objects, especially pedestrians and cyclists, we have introduced <strong>Near-Object 3D Detection</strong>.
+This can serve as a supplementary detection method alongside <code>Base 3D Detection</code>.</p>
+<p>We primarily use ML-based methods like CenterPoint for near-object detection, which excels at detecting small objects.
+By applying higher-resolution voxel grids in the ML model, we improve detection accuracy for small objects.
+The detection range typically falls between 30m and 50m.</p>
+<h3 id="tbd-camera-only-3d-detection">(TBD) Camera-Only 3D Detection<a class="headerlink" href="#tbd-camera-only-3d-detection" title="Permanent link">#</a></h3>
+<p>As optional method for detection to improve detection of objects that LiDAR-based methods struggle with, we have introduced <strong>Camera-Only 3D Detection</strong>.
+<code>Camera-Only 3D detection</code> aims to solve the cases that are difficult to detect with LiDAR-based methods.
+For example, <code>Camera-Only 3D detection</code> will deal with detection of objects with tree occlusion and long-distance recognition.</p>
+<p>Note that we will apply a high-confidence threshold to suppress the impact of false positives in <code>Camera-Only 3D Detection</code>.</p>
+<h3 id="radar-only-faraway-object-3d-detection">Radar-Only Faraway Object 3D Detection<a class="headerlink" href="#radar-only-faraway-object-3d-detection" title="Permanent link">#</a></h3>
+<p>For enhanced detection of distant objects, we use <strong>Radar-Only 3D Detection</strong>.
+For more details, see <a href="https://github.com/autowarefoundation/autoware-documentation/blob/main/docs/design/autoware-architecture/perception/reference-implementations/radar-based-3d-detector/faraway-object-detection.md">the document on faraway radar object detection</a>.</p>
+<h3 id="tbd-3d-semantic-segmentation">(TBD) 3D Semantic Segmentation<a class="headerlink" href="#tbd-3d-semantic-segmentation" title="Permanent link">#</a></h3>
+<p>To improve detection of objects that are difficult to detect using traditional 3D detection methods, especially vegetation and traffic cone, we will implement <strong>3D Semantic Segmentation</strong>.
+<code>3D Semantic Segmentation</code> provides non-ground point clouds and labeled pointcloud for some objects and vegetation.</p>
+<p>Available methods include:</p>
+<ul>
+<li>FRNet (TBD)</li>
+</ul>
+<p>To integrate with the Autoware interface, we use a euclidean clustering method for processing 3D segmentation outputs.</p>
+<h3 id="cluster-based-3d-detection">Cluster-Based 3D Detection<a class="headerlink" href="#cluster-based-3d-detection" title="Permanent link">#</a></h3>
+<p>To enhance detection of objects that LiDAR-based methods may struggle with, we offer <strong>Cluster-Based 3D Detection</strong>.
+<code>Cluster-Based 3D Detection</code> consists of many nodes, and the pipeline shows as following.</p>
+<p><img alt="" src="../image/clustering_based_detection.drawio.svg"></p>
+<p><code>Cluster-Based 3D Detection</code> is based on euclidean clustering including roi based pointcloud fusion.
+Its process combines non-ground LiDAR point clouds with the results of 2D detection or semantic segmentation.
+This can be used as supplementary detection alongside <code>Base 3D Detection</code>.</p>
+<p>Note that as the data from point clouds and images increase, the processing time also increases.
+Therefore, we recommend avoiding this pipeline in situations where processing time is critical or use for only narrow detection range.</p>
+<h3 id="multi-object-tracking-v2">Multi-Object Tracking v2<a class="headerlink" href="#multi-object-tracking-v2" title="Permanent link">#</a></h3>
+<p><strong>Multi-Object Tracking v2</strong> is based on existing <a href="https://github.com/autowarefoundation/autoware.universe/tree/main/perception/autoware_multi_object_tracker">multi_object_tracker</a> and illustrated below:</p>
+<p><img alt="" src="../image/multi_object_tracking.drawio.svg"></p>
+<p>The key features are as follows.</p>
+<ul>
+<li><strong>Priority Object Merger</strong></li>
+</ul>
+<p><code>Priority Object Merger</code> introduces new features compared to the existing <a href="https://github.com/autowarefoundation/autoware.universe/tree/main/perception/autoware_object_merger">object_merger</a>.
+<code>Priority Object Merger</code> can handle multiple inputs, reducing the need for multiple <code>object_merger</code> nodes.
+It leads to be easy to debug.</p>
+<p>The existing <code>object_merger</code> uses approximate synchronization via message filters, introducing time delays.
+As the amount of input data increases, which makes the delay, impacting the availability of autonomous driving.
+Additionally, if some detections fail, the merger fails to combine the results, reducing availability.</p>
+<p><img alt="" src="../image/priority_merger_1.drawio.svg"></p>
+<p>The <code>Priority Object Merger</code> eliminates the message filter and uses a priority-based approach for the main detection.
+When subscribing to the output of the main detection, it gathers all outputs from the detection pipeline.
+It gathers outputs from all detections, ensuring that even if a secondary detection fails, results from other detections can still be merged, improving overall reliability and availability.</p>
+<p><img alt="" src="../image/priority_merger_2.drawio.svg"></p>
+<ul>
+<li><strong>Stationary detection</strong></li>
+</ul>
+<p>As input data volume increases, processing time also increases.
+To optimize performance, we reduce computational cost by incorporating stationary object detection.</p>
 <!-- prettier-ignore --></div>
 
 
