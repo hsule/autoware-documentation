@@ -441,6 +441,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/fail_safe/mrm_description/</loc>
+         <lastmod>2025-06-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/list/api/fail_safe/mrm_state/</loc>
          <lastmod>2025-06-17</lastmod>
          <changefreq>daily</changefreq>
@@ -946,6 +951,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/MrmDescription/</loc>
+         <lastmod>2025-06-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/MrmRequest/</loc>
          <lastmod>2025-06-17</lastmod>
          <changefreq>daily</changefreq>
@@ -1122,6 +1132,11 @@
     </url>
     <url>
          <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/srv/ListManualControlMode/</loc>
+         <lastmod>2025-06-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/srv/ListMrmDescription/</loc>
          <lastmod>2025-06-17</lastmod>
          <changefreq>daily</changefreq>
     </url>
