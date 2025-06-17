@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/msg/Heartbeat/">
+        <link rel="canonical" href="https://autowarefoundation.github.io/autoware-documentation/latest/design/autoware-interfaces/ad-api/types/autoware_adapi_v1_msgs/srv/ResetDiagGraph/">
       
       
-        <link rel="prev" href="../HazardLightsCommand/">
+        <link rel="prev" href="../ListManualControlMode/">
       
       
-        <link rel="next" href="../KvString/">
+        <link rel="next" href="../SelectManualControlMode/">
       
       <link rel="icon" href="../../../../../../../assets/images/autoware-foundation.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.20">
     
     
       
-        <title>autoware_adapi_v1_msgs/msg/Heartbeat - Autoware Documentation</title>
+        <title>autoware_adapi_v1_msgs/srv/ResetDiagGraph - Autoware Documentation</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#autoware_adapi_v1_msgsmsgheartbeat" class="md-skip">
+        <a href="#autoware_adapi_v1_msgssrvresetdiaggraph" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              autoware_adapi_v1_msgs/msg/Heartbeat
+              autoware_adapi_v1_msgs/srv/ResetDiagGraph
             
           </span>
         </div>
@@ -7607,17 +7607,14 @@
   
 
 
-<div><h1 id="autoware_adapi_v1_msgsmsgheartbeat">autoware_adapi_v1_msgs/msg/Heartbeat<a class="headerlink" href="#autoware_adapi_v1_msgsmsgheartbeat" title="Permanent link">#</a></h1>
+<div><h1 id="autoware_adapi_v1_msgssrvresetdiaggraph">autoware_adapi_v1_msgs/srv/ResetDiagGraph<a class="headerlink" href="#autoware_adapi_v1_msgssrvresetdiaggraph" title="Permanent link">#</a></h1>
 <h2 id="definition">Definition<a class="headerlink" href="#definition" title="Permanent link">#</a></h2>
-<div class="highlight"><pre><span></span><code># Timestamp in Autoware for delay checking.
-builtin_interfaces/Time stamp
-
-# Sequence number for order verification, wraps at 65535.
-uint16 seq
+<div class="highlight"><pre><span></span><code>---
+autoware_adapi_v1_msgs/ResponseStatus status
 </code></pre></div>
 <h2 id="this-type-uses">This type uses<a class="headerlink" href="#this-type-uses" title="Permanent link">#</a></h2>
 <ul>
-<li>None</li>
+<li><a href="../../msg/ResponseStatus/">autoware_adapi_v1_msgs/msg/ResponseStatus</a></li>
 </ul>
 <h2 id="this-type-is-used-by">This type is used by<a class="headerlink" href="#this-type-is-used-by" title="Permanent link">#</a></h2>
 <ul>
@@ -7650,7 +7647,7 @@ uint16 seq
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../HazardLightsCommand/" class="md-footer__link md-footer__link--prev" aria-label="Previous: autoware_adapi_v1_msgs/msg/HazardLightsCommand" rel="prev">
+          <a href="../ListManualControlMode/" class="md-footer__link md-footer__link--prev" aria-label="Previous: autoware_adapi_v1_msgs/srv/ListManualControlMode" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -7659,20 +7656,20 @@ uint16 seq
                 Previous
               </span>
               <div class="md-ellipsis">
-                autoware_adapi_v1_msgs/msg/HazardLightsCommand
+                autoware_adapi_v1_msgs/srv/ListManualControlMode
               </div>
             </div>
           </a>
         
         
           
-          <a href="../KvString/" class="md-footer__link md-footer__link--next" aria-label="Next: autoware_adapi_v1_msgs/msg/KvString" rel="next">
+          <a href="../SelectManualControlMode/" class="md-footer__link md-footer__link--next" aria-label="Next: autoware_adapi_v1_msgs/srv/SelectManualControlMode" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                autoware_adapi_v1_msgs/msg/KvString
+                autoware_adapi_v1_msgs/srv/SelectManualControlMode
               </div>
             </div>
             <div class="md-footer__button md-icon">
