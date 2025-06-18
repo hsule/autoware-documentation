@@ -8,20 +8,20 @@
       
       
       
-        <link rel="canonical" href="https://autowarefoundation.github.io/autoware-documentation/main/design/autoware-interfaces/ad-api/list/api/vehicle/command/velocity/">
+        <link rel="canonical" href="https://autowarefoundation.github.io/autoware-documentation/main/design/autoware-interfaces/ad-api/list/api/control/command/acceleration/">
       
       
-        <link rel="prev" href="../steering/">
+        <link rel="prev" href="../../../../">
       
       
-        <link rel="next" href="../../doors/command/">
+        <link rel="next" href="../pedals/">
       
       <link rel="icon" href="../../../../../../../../assets/images/autoware-foundation.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.20">
     
     
       
-        <title>/api/vehicle/command/velocity - Autoware Documentation</title>
+        <title>/api/control/command/acceleration - Autoware Documentation</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#apivehiclecommandvelocity" class="md-skip">
+        <a href="#apicontrolcommandacceleration" class="md-skip">
           Skip to content
         </a>
       
@@ -116,7 +116,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              /api/vehicle/command/velocity
+              /api/control/command/acceleration
             
           </span>
         </div>
@@ -5559,6 +5559,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_5_4_2_5" id="__nav_5_4_2_5_label" tabindex="0">
@@ -5572,6 +5574,20 @@
           Features
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../features/control/" class="md-nav__link">
+        Control
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -7607,15 +7623,15 @@
   
 
 
-<div><h1 id="apivehiclecommandvelocity">/api/vehicle/command/velocity<a class="headerlink" href="#apivehiclecommandvelocity" title="Permanent link">#</a></h1>
+<div><h1 id="apicontrolcommandacceleration">/api/control/command/acceleration<a class="headerlink" href="#apicontrolcommandacceleration" title="Permanent link">#</a></h1>
 <h2 id="status">Status<a class="headerlink" href="#status" title="Permanent link">#</a></h2>
 <ul>
 <li>Latest Version: not released</li>
 <li>Method: realtime stream</li>
-<li>Data Type: <a href="../../../../../types/autoware_adapi_v1_msgs/msg/VelocityCommand/">autoware_adapi_v1_msgs/msg/VelocityCommand</a></li>
+<li>Data Type: <a href="../../../../../types/autoware_adapi_v1_msgs/msg/AccelerationCommand/">autoware_adapi_v1_msgs/msg/AccelerationCommand</a></li>
 </ul>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">#</a></h2>
-<p>This is the target velocity that Autoware is sending to the vehicle.</p>
+<p>This is the target acceleration that Autoware is sending to the vehicle.</p>
 <h2 id="message">Message<a class="headerlink" href="#message" title="Permanent link">#</a></h2>
 <table>
 <thead>
@@ -7632,9 +7648,9 @@
 <td>Timestamp when this message was sent.</td>
 </tr>
 <tr>
-<td>velocity</td>
+<td>acceleration</td>
 <td>float32</td>
-<td>Target velocity [m/s].</td>
+<td>Target acceleration [m/s^2].</td>
 </tr>
 </tbody>
 </table>
@@ -7665,7 +7681,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../steering/" class="md-footer__link md-footer__link--prev" aria-label="Previous: /api/vehicle/command/steering" rel="prev">
+          <a href="../../../../" class="md-footer__link md-footer__link--prev" aria-label="Previous: List of Autoware AD API" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -7674,20 +7690,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                /api/vehicle/command/steering
+                List of Autoware AD API
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../doors/command/" class="md-footer__link md-footer__link--next" aria-label="Next: /api/vehicle/doors/command" rel="next">
+          <a href="../pedals/" class="md-footer__link md-footer__link--next" aria-label="Next: /api/control/command/pedals" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                /api/vehicle/doors/command
+                /api/control/command/pedals
               </div>
             </div>
             <div class="md-footer__button md-icon">
