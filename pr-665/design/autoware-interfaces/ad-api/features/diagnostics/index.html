@@ -1408,6 +1408,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
@@ -3842,6 +3844,60 @@
 
             
           
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2_9" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_2_9" id="__nav_4_2_9_label" tabindex="0">
+          8. Integrating Sensors
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_2_9">
+          <span class="md-nav__icon md-icon"></span>
+          8. Integrating Sensors
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../how-to-guides/integrating-autoware/integrating-sensors/integrating-cameras/" class="md-nav__link">
+        Integrating cameras
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -5559,6 +5615,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_5_4_2_5" id="__nav_5_4_2_5_label" tabindex="0">
@@ -5572,6 +5630,20 @@
           Features
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../control/" class="md-nav__link">
+        Control
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -7653,6 +7725,7 @@
 <ul>
 <li><a href="../../list/api/system/diagnostics/struct/">/api/system/diagnostics/struct</a></li>
 <li><a href="../../list/api/system/diagnostics/status/">/api/system/diagnostics/status</a></li>
+<li><a href="../../list/api/system/diagnostics/reset/">/api/system/diagnostics/reset</a></li>
 </ul>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">#</a></h2>
 <p>This API provides a diagnostic graph consisting of error levels for functional units of Autoware.
@@ -7665,11 +7738,15 @@ For error level, the same value as <code>diagnostic_msgs/msg/DiagnosticStatus</c
 <p><img alt="graph-tree" src="tree.drawio.svg"></p>
 <p>The diagnostics data has static and dynamic parts, so the API provides these separately for efficiency.
 Below is an example of a message that corresponds to the above diagram.
-The static part of the diagnostic is published only once as the DiagGraphStruct that contains nodes and links.
-The links specify dependencies between nodes by index into an array of nodes.
+The static part of the diagnostic is published only once as the DiagGraphStruct that contains nodes, diags, and links.
+The links specify dependencies between nodes by index into an array of them.
 The dynamic part of the diagnostic is published periodically as DiagGraphStatus.
-The status has an array of nodes of the same length as the struct, with the same index representing the same functional unit.</p>
+The status has nodes and diags of the same length as the struct, with the same index representing the same functional unit.</p>
 <p><img alt="graph-data" src="data.drawio.svg"></p>
+<p>Some functional unit levels may be latched. If the abnormality continues for a certain period, the level value will not return to normal.
+Use input_level to know the level before it was latched. Also, use latch_level to know if the latch is currently activated.
+To restore the level after the latch has been activated, use the reset API.</p>
+<p><img alt="level" src="level.drawio.svg"></p>
 <!-- prettier-ignore --></div>
 
 

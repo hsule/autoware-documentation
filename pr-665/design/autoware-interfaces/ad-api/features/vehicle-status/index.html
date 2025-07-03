@@ -1408,6 +1408,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
@@ -3842,6 +3844,60 @@
 
             
           
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2_9" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4_2_9" id="__nav_4_2_9_label" tabindex="0">
+          8. Integrating Sensors
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_2_9">
+          <span class="md-nav__icon md-icon"></span>
+          8. Integrating Sensors
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../how-to-guides/integrating-autoware/integrating-sensors/integrating-cameras/" class="md-nav__link">
+        Integrating cameras
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -5559,6 +5615,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_5_4_2_5" id="__nav_5_4_2_5_label" tabindex="0">
@@ -5572,6 +5630,20 @@
           Features
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../control/" class="md-nav__link">
+        Control
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -5825,13 +5897,6 @@
         <li class="md-nav__item">
   <a href="#dimensions" class="md-nav__link">
     Dimensions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
   </a>
   
 </li>
@@ -7679,13 +7744,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -7712,10 +7770,6 @@
 <li><a href="../../list/api/vehicle/metrics/">/api/vehicle/metrics</a></li>
 <li><a href="../../list/api/vehicle/dimensions/">/api/vehicle/dimensions</a></li>
 <li><a href="../../list/api/vehicle/specs/">/api/vehicle/specs</a></li>
-<li><a href="../../list/api/vehicle/command/acceleration/">/api/vehicle/command/acceleration</a></li>
-<li><a href="../../list/api/vehicle/command/pedals/">/api/vehicle/command/pedals</a></li>
-<li><a href="../../list/api/vehicle/command/steering/">/api/vehicle/command/steering</a></li>
-<li><a href="../../list/api/vehicle/command/velocity/">/api/vehicle/command/velocity</a></li>
 </ul>
 <h2 id="kinematics">Kinematics<a class="headerlink" href="#kinematics" title="Permanent link">#</a></h2>
 <p>This is an estimate of the vehicle kinematics. The vehicle position is necessary for applications to schedule dispatches.
@@ -7728,9 +7782,6 @@ These are mainly used for visualization and remote control.</p>
 The remaining energy can be used for vehicle dispatch scheduling.</p>
 <h2 id="dimensions">Dimensions<a class="headerlink" href="#dimensions" title="Permanent link">#</a></h2>
 <p>The vehicle dimensions are used to know the actual distance between the vehicle and objects because the vehicle position in kinematics is the coordinates of the base link. This is necessary for visualization when supporting vehicles remotely.</p>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">#</a></h2>
-<p>The vehicle commands are target values that Autoware is sending to the vehicle. Note that unlike vehicle status, this does not represent the actual vehicle status.
-Some commands may not be supported depending on the vehicle control method.</p>
 <!-- prettier-ignore --></div>
 
 
