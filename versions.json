@@ -1,7 +1,7 @@
 [
   {
-    "version": "release-v1.0_beta",
-    "title": "release-v1.0_beta",
+    "version": "main",
+    "title": "main",
     "aliases": []
   },
   {
@@ -75,13 +75,8 @@
     "aliases": []
   },
   {
-    "version": "main",
-    "title": "main",
-    "aliases": []
-  },
-  {
-    "version": "latest",
-    "title": "latest",
+    "version": "fix-toggle",
+    "title": "fix-toggle",
     "aliases": []
   },
   {
@@ -90,8 +85,13 @@
     "aliases": []
   },
   {
-    "version": "fix-toggle",
-    "title": "fix-toggle",
+    "version": "latest",
+    "title": "latest",
+    "aliases": []
+  },
+  {
+    "version": "release-v1.0_beta",
+    "title": "release-v1.0_beta",
     "aliases": []
   }
 ]
