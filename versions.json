@@ -1,17 +1,12 @@
 [
   {
+    "version": "release-v1.0_beta",
+    "title": "release-v1.0_beta",
+    "aliases": []
+  },
+  {
     "version": "main",
     "title": "main",
-    "aliases": []
-  },
-  {
-    "version": "fix-toggle",
-    "title": "fix-toggle",
-    "aliases": []
-  },
-  {
-    "version": "galactic",
-    "title": "galactic",
     "aliases": []
   },
   {
@@ -20,8 +15,13 @@
     "aliases": []
   },
   {
-    "version": "release-v1.0_beta",
-    "title": "release-v1.0_beta",
+    "version": "galactic",
+    "title": "galactic",
+    "aliases": []
+  },
+  {
+    "version": "fix-toggle",
+    "title": "fix-toggle",
     "aliases": []
   }
 ]
